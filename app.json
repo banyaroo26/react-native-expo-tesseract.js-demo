@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "react-native-tesseract.js-demo",
-    "slug": "react-native-tesseract.js-demo",
+    "slug": "react-native-tesseractjs-demo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -31,6 +31,15 @@
           "backgroundColor": "#208AEF",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow demo app to access your camera",
+          "microphonePermission": "Allow demo app to access your microphone",
+          "recordAudioAndroid": true,
+          "barcodeScannerEnabled": true
         }
       ]
     ],
