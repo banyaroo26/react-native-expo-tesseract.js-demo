@@ -1,4 +1,4 @@
-# React Native Tesseract.js Demo
+# React Native Expo Tesseract.js Demo
 
 ![App Screenshot](./screenshot/screenshot.jpg)
 
@@ -10,6 +10,8 @@ A proof-of-concept demonstrating how to successfully run the web-based `tesserac
 # Install dependencies
 npx expo install
 
+# Generate the native project
 npx expo prebuild --clear
 
+# Build and run on android
 npx expo run:android
