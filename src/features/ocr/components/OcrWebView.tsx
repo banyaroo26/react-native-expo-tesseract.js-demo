@@ -58,6 +58,7 @@ export const OcrWebView = forwardRef<OcrWebViewRef>((_, ref) => {
               workerPath: "${SERVER_URL}worker.min.js",
               langPath: "${SERVER_URL}lang",
               corePath: "${SERVER_URL}core",
+              gzip: false,
             });
           }
         }
