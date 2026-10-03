@@ -9,5 +9,5 @@ export default function Index() {
     });
   }, []);
   */
-  return <Redirect href="/ocr/camera" />;
+  return <Redirect href="/ocr/ocr" />;
 }

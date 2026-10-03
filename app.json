@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.anonymous.reactnativetesseractjsdemo"
     },
     "web": {
       "output": "static",
@@ -34,12 +35,18 @@
         }
       ],
       [
-        "expo-camera",
+        "expo-image-picker",
         {
-          "cameraPermission": "Allow demo app to access your camera",
-          "microphonePermission": "Allow demo app to access your microphone",
-          "recordAudioAndroid": true,
-          "barcodeScannerEnabled": true
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "microphonePermission": false,
+          "colors": {
+            "cropToolbarColor": "#000000"
+          },
+          "dark": {
+            "colors": {
+              "cropToolbarColor": "#000000"
+            }
+          }
         }
       ]
     ],
