@@ -3,10 +3,8 @@
 [![Expo](https://img.shields.io/badge/Expo-000000?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/)
 [![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
 [![Tesseract.js](https://img.shields.io/badge/Tesseract.js-4A154B?style=for-the-badge&logo=tesseract&logoColor=white)](https://github.com/naptha/tesseract.js)
-[![Language: Burmese](https://img.shields.io/badge/Language-Burmese-red?style=for-the-badge)](https://github.com/tesseract-ocr/tessdata)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-A proof-of-concept demonstrating how to perform **Offline Burmese Optical Character Recognition (OCR)** on mobile devices using **Tesseract.js** inside an Expo / React Native project.
+A proof-of-concept demonstrating how to perform **Offline Optical Character Recognition (OCR)** on mobile devices using **Tesseract.js** inside an Expo / React Native project.
 
 Running Tesseract.js offline inside React Native presents two major technical hurdles:
 1. **Missing Web APIs**: React Native's JS runtime (Hermes/JSC) lacks HTML5 Canvas, Web Workers, and WebAssembly support required by Tesseract.js.
