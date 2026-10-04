@@ -8,15 +8,13 @@
 
 A proof-of-concept demonstrating how to perform **Offline Burmese Optical Character Recognition (OCR)** on mobile devices using **Tesseract.js** inside an Expo / React Native project.
 
-##  How It Works
-
 Running Tesseract.js offline inside React Native presents two major technical hurdles:
 1. **Missing Web APIs**: React Native's JS runtime (Hermes/JSC) lacks HTML5 Canvas, Web Workers, and WebAssembly support required by Tesseract.js.
-2. **WebView `file://` Restrictions**: Fetching local `.wasm`, Web Workers, and `.traineddata` files directly over `file://` protocol in a WebView triggers security blocks and `fetch()` failures.
+2. **WebView `file://` Restrictions**: Fetching local `.js`, `.wasm` and `.traineddata` files directly over `file://` protocol in a WebView triggers security blocks and `fetch()` failures.
 
-### The Architecture
+Therefore:
 * **Local HTTP Host**: A lightweight **`nodejs-mobile`** background process runs an internal HTTP server on `http://127.0.0.1:8080`.
-* **Offscreen WebView Engine**: A hidden `react-native-webview` loads Tesseract.js assets from `localhost` (treated as a Secure Context), giving Tesseract.js full WebAssembly and Web Worker access to execute `mya.traineddata` completely offline.
+* **Offscreen WebView Engine**: A hidden `react-native-webview` loads Tesseract.js assets from `localhost` to execute `mya.traineddata` completely offline.
 
 ### Run Demo
 
