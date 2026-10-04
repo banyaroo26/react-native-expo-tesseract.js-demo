@@ -16,7 +16,7 @@ Therefore:
 * **Local HTTP Host**: A lightweight **`nodejs-mobile`** background process runs an internal HTTP server on `http://127.0.0.1:8080`.
 * **Offscreen WebView Engine**: A hidden `react-native-webview` loads Tesseract.js assets from `localhost` to execute `mya.traineddata` completely offline.
 
-### Run Demo
+## Run Demo
 
 ```bash
 # Install dependencies
@@ -29,6 +29,10 @@ npx expo prebuild --clear
 npx expo run:android
 ```
 
-### Screenshot
+## Screenshot
 
 ![App Screenshot](./screenshot/screenshot.jpg)
+
+## License
+
+MIT
